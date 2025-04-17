@@ -89,21 +89,21 @@ export default function Home() {
     }
   };
 
-  // Generate random card styles with vibrant spiritual colors
+  // Generate random card styles with Thistledown colors
   const getRandomCardStyle = () => {
     const styles = [
-      'bg-gradient-to-r from-spirit-purple to-spirit-blue/90',
-      'bg-gradient-to-br from-spirit-blue to-spirit-teal/90',
-      'bg-gradient-to-bl from-spirit-cream to-spirit-orange/90',
-      'bg-gradient-to-tr from-spirit-gold to-spirit-orange/90',
-      'bg-gradient-to-tl from-spirit-purple to-spirit-pink/90',
-      'bg-gradient-to-r from-spirit-lavender to-spirit-blue/90',
-      'bg-gradient-to-b from-spirit-blue to-spirit-teal/90',
-      'bg-gradient-to-t from-spirit-gold to-spirit-cream/90',
-      'bg-gradient-to-r from-spirit-violet to-spirit-indigo/90',
-      'bg-gradient-to-br from-spirit-magenta to-spirit-violet/90',
-      'bg-gradient-to-bl from-spirit-teal to-spirit-aqua/90',
-      'bg-gradient-to-tr from-spirit-mint to-spirit-teal/90',
+      'bg-gradient-to-r from-thistledown-5 to-thistledown-2/90',
+      'bg-gradient-to-br from-thistledown-2 to-thistledown-1/90',
+      'bg-gradient-to-bl from-thistledown-3 to-thistledown-4/90',
+      'bg-gradient-to-tr from-thistledown-4 to-thistledown-5/90',
+      'bg-gradient-to-tl from-thistledown-5 to-thistledown-4/90',
+      'bg-gradient-to-r from-thistledown-2 to-thistledown-1/90',
+      'bg-gradient-to-b from-thistledown-1 to-thistledown-4/90',
+      'bg-gradient-to-t from-thistledown-5 to-thistledown-3/90',
+      'bg-gradient-to-r from-thistledown-4 to-thistledown-1/90',
+      'bg-gradient-to-br from-thistledown-3 to-thistledown-5/90',
+      'bg-gradient-to-bl from-thistledown-2 to-thistledown-3/90',
+      'bg-gradient-to-tr from-thistledown-3 to-thistledown-2/90',
     ];
     return styles[Math.floor(Math.random() * styles.length)];
   };
@@ -142,35 +142,35 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-spirit-light via-spirit-lavender/20 to-spirit-blue/20">
+    <main className="min-h-screen bg-gradient-to-b from-thistledown-3 via-thistledown-4/20 to-thistledown-1/20">
       <div className="max-w-7xl mx-auto p-4 md:p-8">
         <header className="text-center py-8 mb-8">
-          <h1 className="text-4xl md:text-5xl font-display text-spirit-violet mb-3 animate-float glow">
+          <h1 className="text-4xl md:text-5xl font-display text-thistledown-5 mb-3 animate-float glow">
             Blessing Weaver
           </h1>
-          <p className="text-spirit-text/80 max-w-2xl mx-auto mb-8">
+          <p className="text-thistledown-5/80 max-w-2xl mx-auto mb-8">
             Spiritual blessings in English and Hindi
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-6">
             <button 
               onClick={toggleLanguage}
-              className="spirit-button bg-gradient-to-r from-spirit-gold/80 to-spirit-orange/80 text-spirit-dark hover:from-spirit-gold hover:to-spirit-orange shadow-spirit hover:shadow-spirit-hover"
+              className="spirit-button bg-gradient-to-r from-thistledown-4/80 to-thistledown-5/80 text-thistledown-1 hover:from-thistledown-4 hover:to-thistledown-5 shadow-spirit hover:shadow-spirit-hover"
             >
               {currentLanguage === 'english' ? 'Switch to Hindi' : 'Switch to English'}
             </button>
             
             <button 
               onClick={generateBlessingsGrid}
-              className="spirit-button bg-gradient-to-r from-spirit-purple/80 to-spirit-blue/80 text-white hover:from-spirit-purple hover:to-spirit-blue shadow-spirit hover:shadow-spirit-hover"
+              className="spirit-button bg-gradient-to-r from-thistledown-5/80 to-thistledown-1/80 text-thistledown-3 hover:from-thistledown-5 hover:to-thistledown-1 shadow-spirit hover:shadow-spirit-hover"
             >
               <span className="relative">
                 Refresh Blessings
-                <span className="absolute top-0 right-0 -mr-1 -mt-1 w-2 h-2 rounded-full bg-spirit-gold animate-ping"></span>
+                <span className="absolute top-0 right-0 -mr-1 -mt-1 w-2 h-2 rounded-full bg-thistledown-4 animate-ping"></span>
               </span>
             </button>
             
-            <Link href="/saved" className="spirit-button bg-gradient-to-r from-spirit-teal/80 to-spirit-blue/80 text-white hover:from-spirit-teal hover:to-spirit-blue shadow-spirit hover:shadow-spirit-hover flex items-center">
+            <Link href="/saved" className="spirit-button bg-gradient-to-r from-thistledown-2/80 to-thistledown-1/80 text-thistledown-5 hover:from-thistledown-2 hover:to-thistledown-1 shadow-spirit hover:shadow-spirit-hover flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
               </svg>
@@ -194,13 +194,13 @@ export default function Home() {
                   <div className="flex-grow flex items-center justify-center">
                     <div className="w-16 h-16 animate-spin-slow opacity-75">
                       <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.5)" strokeWidth="3" />
-                        <path d="M50,10 A40,40 0 0,1 90,50" fill="none" stroke="white" strokeWidth="4" strokeLinecap="round" />
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(224,224,213,0.5)" strokeWidth="3" />
+                        <path d="M50,10 A40,40 0 0,1 90,50" fill="none" stroke="#E0E0D5" strokeWidth="4" strokeLinecap="round" />
                       </svg>
                     </div>
                   </div>
                   <div className="flex justify-end mt-auto">
-                    <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-spirit-white/50 text-spirit-text">
+                    <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-thistledown-3/50 text-thistledown-5">
                       {blessing.language === 'english' ? 'English' : 'हिंदी'}
                     </span>
                   </div>
@@ -209,12 +209,12 @@ export default function Home() {
                 {/* Back of card (not shown in grid view) */}
                 <div className={`flip-card-back rounded-2xl glass ${blessing.style} h-full p-5 flex flex-col`}>
                   <div className="flex-grow flex items-center justify-center">
-                    <p className={`text-base line-clamp-5 text-white text-center ${blessing.language === 'hindi' ? 'font-hindi' : ''}`}>
+                    <p className={`text-base line-clamp-5 text-thistledown-3 text-center ${blessing.language === 'hindi' ? 'font-hindi' : ''}`}>
                       {blessing.text}
                     </p>
                   </div>
                   <div className="flex justify-end mt-auto">
-                    <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-spirit-white/50 text-spirit-text">
+                    <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-thistledown-3/50 text-thistledown-5">
                       {blessing.language === 'english' ? 'English' : 'हिंदी'}
                     </span>
                   </div>
@@ -229,7 +229,7 @@ export default function Home() {
       {fullscreenCard && (
         <div 
           ref={fullscreenRef}
-          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-thistledown-1/60 backdrop-blur-sm z-50 flex items-center justify-center p-4"
           onClick={(e) => {
             if (e.target === fullscreenRef.current) {
               closeFullscreen();
@@ -241,20 +241,20 @@ export default function Home() {
               <div className="flex justify-between mb-4">
                 <button 
                   onClick={closeFullscreen}
-                  className="spirit-button bg-spirit-white/80 text-spirit-dark hover:bg-spirit-white shadow-spirit flex items-center"
+                  className="spirit-button bg-thistledown-3/80 text-thistledown-5 hover:bg-thistledown-3 shadow-spirit flex items-center"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
                   Close
                 </button>
-                <span className="text-xs font-medium px-3 py-1 rounded-full bg-spirit-white/80 text-spirit-dark flex items-center">
+                <span className="text-xs font-medium px-3 py-1 rounded-full bg-thistledown-3/80 text-thistledown-5 flex items-center">
                   {fullscreenCard.language === 'english' ? 'English' : 'हिंदी'}
                 </span>
               </div>
               
               <div className="flex-grow flex items-center justify-center my-8">
-                <p className={`text-xl md:text-2xl text-white text-center ${fullscreenCard.language === 'hindi' ? 'font-hindi' : ''}`}>
+                <p className={`text-xl md:text-2xl text-thistledown-3 text-center ${fullscreenCard.language === 'hindi' ? 'font-hindi' : ''}`}>
                   {fullscreenCard.text}
                 </p>
               </div>
@@ -262,7 +262,7 @@ export default function Home() {
               <div className="flex justify-center space-x-4 mt-auto">
                 <button 
                   onClick={() => handleSaveBlessing(fullscreenCard)}
-                  className="spirit-button bg-spirit-gold/80 text-spirit-dark hover:bg-spirit-gold shadow-spirit flex items-center"
+                  className="spirit-button bg-thistledown-4/80 text-thistledown-5 hover:bg-thistledown-4 shadow-spirit flex items-center"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
@@ -272,7 +272,7 @@ export default function Home() {
                 
                 <button 
                   onClick={() => handleShareBlessing(fullscreenCard)}
-                  className="spirit-button bg-spirit-white/80 text-spirit-dark hover:bg-spirit-white shadow-spirit flex items-center"
+                  className="spirit-button bg-thistledown-3/80 text-thistledown-5 hover:bg-thistledown-3 shadow-spirit flex items-center"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />

@@ -8,31 +8,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'spirit-white': '#ffffff',
-        'spirit-light': '#F9F5FF',
-        'spirit-text': '#2D224C',
-        'spirit-dark': '#1E1B2E',
-        'spirit-blue': '#7A89F4',
-        'spirit-purple': '#B664EC',
-        'spirit-cream': '#FFF0D9',
-        'spirit-pink': '#FF9DE2',
-        'spirit-teal': '#56D8C5',
-        'spirit-orange': '#FFA573',
-        'spirit-lavender': '#D6C5F0',
-        'spirit-gold': '#FFD95A',
-        'spirit-indigo': '#5D5FEF',
-        'spirit-magenta': '#E45A97',
-        'spirit-violet': '#9754CB',
-        'spirit-aqua': '#42CAFD',
-        'spirit-mint': '#83EFC8',
-        'spirit-ruby': '#FF4E6E',
-        'spirit-emerald': '#4ADEB5',
-        'spirit-amber': '#FFB84D',
-        'spirit-sapphire': '#5E8BFF',
-        'spirit-amethyst': '#AC5CE9',
-        'spirit-topaz': '#FFD479',
-        'spirit-jade': '#50D2A0',
-        'spirit-moonstone': '#73B8FF',
+        // Thistledown color palette
+        'thistledown-1': '#A9ABA8',
+        'thistledown-2': '#CBCCC7',
+        'thistledown-3': '#E0E0D5',
+        'thistledown-4': '#D0CABA',
+        'thistledown-5': '#B8AB90',
+        // Root colors for theming
+        'spirit-white': '#E0E0D5',
+        'spirit-light': '#E0E0D5',
+        'spirit-text': '#B8AB90',
+        'spirit-dark': '#A9ABA8',
       },
       fontFamily: {
         'sans': ['Poppins', 'sans-serif'],
@@ -40,13 +26,13 @@ module.exports = {
         'display': ['Satisfy', 'cursive'],
       },
       boxShadow: {
-        'spirit': '0 4px 20px -2px rgba(113, 65, 177, 0.2)',
-        'spirit-hover': '0 8px 25px -5px rgba(113, 65, 177, 0.3)',
-        'card': '0 10px 30px -5px rgba(177, 120, 240, 0.3)',
-        'glow': '0 0 15px rgba(182, 100, 236, 0.6)',
-        'inner-glow': 'inset 0 0 15px rgba(182, 100, 236, 0.5)',
-        'rainbow': '0 0 15px rgba(255, 255, 255, 0.5), 0 0 30px rgba(182, 100, 236, 0.5), 0 0 45px rgba(122, 137, 244, 0.3)',
-        'crystal': '0 8px 32px rgba(255, 255, 255, 0.15), 0 0 8px rgba(255, 255, 255, 0.3)'
+        'spirit': '0 4px 20px -2px rgba(184, 171, 144, 0.2)',
+        'spirit-hover': '0 8px 25px -5px rgba(184, 171, 144, 0.3)',
+        'card': '0 10px 30px -5px rgba(184, 171, 144, 0.3)',
+        'glow': '0 0 15px rgba(184, 171, 144, 0.6)',
+        'inner-glow': 'inset 0 0 15px rgba(184, 171, 144, 0.5)',
+        'rainbow': '0 0 15px rgba(224, 224, 213, 0.5), 0 0 30px rgba(184, 171, 144, 0.5), 0 0 45px rgba(203, 204, 199, 0.3)',
+        'crystal': '0 8px 32px rgba(224, 224, 213, 0.15), 0 0 8px rgba(224, 224, 213, 0.3)'
       },
       animation: {
         'card-flip': 'cardFlip 0.4s ease-out forwards',
@@ -75,8 +61,8 @@ module.exports = {
           '50%': { transform: 'translateY(-10px)' },
         },
         pulseGlow: {
-          '0%, 100%': { boxShadow: '0 0 10px rgba(182, 100, 236, 0.4)' },
-          '50%': { boxShadow: '0 0 25px rgba(182, 100, 236, 0.8)' },
+          '0%, 100%': { boxShadow: '0 0 10px rgba(184, 171, 144, 0.4)' },
+          '50%': { boxShadow: '0 0 25px rgba(184, 171, 144, 0.8)' },
         },
         wiggle: {
           '0%, 100%': { transform: 'rotate(-3deg)' },
@@ -91,9 +77,9 @@ module.exports = {
           '50%': { transform: 'scale(1.05)' },
         },
         radiate: {
-          '0%': { boxShadow: '0 0 0 0 rgba(182, 100, 236, 0.4)' },
-          '70%': { boxShadow: '0 0 0 20px rgba(182, 100, 236, 0)' },
-          '100%': { boxShadow: '0 0 0 0 rgba(182, 100, 236, 0)' },
+          '0%': { boxShadow: '0 0 0 0 rgba(184, 171, 144, 0.4)' },
+          '70%': { boxShadow: '0 0 0 20px rgba(184, 171, 144, 0)' },
+          '100%': { boxShadow: '0 0 0 0 rgba(184, 171, 144, 0)' },
         },
         spiral: {
           '0%': { transform: 'rotate(0) scale(1)' },
@@ -120,7 +106,7 @@ module.exports = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'shimmer': 'linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 25%, rgba(255,255,255,0.2) 75%, rgba(255,255,255,0) 100%)',
+        'shimmer': 'linear-gradient(90deg, rgba(224,224,213,0) 0%, rgba(224,224,213,0.2) 25%, rgba(224,224,213,0.2) 75%, rgba(224,224,213,0) 100%)',
       },
     },
   },
